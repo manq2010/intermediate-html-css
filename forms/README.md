@@ -4,7 +4,7 @@ It accepts a type attribute which tells the browser what type of data it should 
 
 ## Labels
 
-To create a label, we use the <label> element.
+To create a label, we use the **<label>** element.
 
 Labels accept a for attribute, which associates it with a particular input. The input we want to associate with a label needs an id attribute with the same value as the label’s for attribute.
 

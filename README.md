@@ -7,7 +7,6 @@
 [Google Fonts]: https://fonts.google.com/
 [Font Library]: https://fontlibrary.org/
 
-
 ```html
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,9 +31,14 @@ p {
 
 # Parent and Sibling Combinators
 
-> - the child combinator
-+ - the adjacent sibling combinator
-~ - the general sibling combinator
+* `>` - the child combinator
+* `+` - the adjacent sibling combinator
+* `~` - the general sibling combinator
+
+<!-- Image -->
+<!-- ![Tux, the Linux mascot](/assets/images/tux.png) -->
+
+<!-- My favorite search engine is [Duck Duck Go](https://duckduckgo.com "The best search engine for privacy"). -->
 
 [Selectors] and [Css Diner]
 
@@ -62,11 +66,11 @@ The ability to nest `calc( calc () - calc () )`
 
 ```html
 <body>
-		<div id="container">
-			<header id="header">< header /></header>
-			<main id="mainContent">< main content /></main>
-			<footer id="footer">< footer /></footer>
-		</div>
+  <div id="container">
+   <header id="header">< header /></header>
+   <main id="mainContent">< main content /></main>
+   <footer id="footer">< footer /></footer>
+  </div>
 </body>
 
 ```
@@ -74,42 +78,45 @@ The ability to nest `calc( calc () - calc () )`
 ### CSS
 
 ```css
-	--header: 3rem;
-	--footer: 40px;
-	--main: calc(100vh - calc(var(--header) + var(--footer)));
+{
+ --header: 3rem;
+ --footer: 40px;
+ --main: calc(100vh - calc(var(--header) + var(--footer)));
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	border: 0px solid transparent;
-	background: #7a7a7a;
+ margin: 0;
+ padding: 0;
+ border: 0px solid transparent;
+ background: #7a7a7a;
 }
 
 #container {
-	border: 0px solid transparent;
-	height: 100vh;
-	color: white;
+ border: 0px solid transparent;
+ height: 100vh;
+ color: white;
 }
 #container > * {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 #header {
-	height: var(--header);
-	background: #111111;
+ height: var(--header);
+ background: #111111;
 }
+
 #mainContent {
-	height: var(--main);
-	background: #343434;
-	margin-right: auto;
-	margin-left: auto;
+ height: var(--main);
+ background: #343434;
+ margin-right: auto;
+ margin-left: auto;
 }
+
 #footer {
-	height: var(--footer);
-	background: #232323;
+ height: var(--footer);
+ background: #232323;
 }
 ```
 
@@ -146,6 +153,7 @@ h1 {
   font-size: clamp(320px, 80vw, 60rem);
 }
 ```
+
 1. the smallest value (320px)
 2. the ideal value (80vw)
 3. the largest value (60rem)
