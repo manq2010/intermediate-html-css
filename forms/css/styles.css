@@ -1,7 +1,25 @@
 button {
-    margin-top: 1rem;
-  }
-  
-  div {
-    margin-top: 1rem;
-  }
+  margin-top: 1rem;
+}
+
+div {
+  margin-top: 1rem;
+}
+
+#check-focus-here {
+  border: 2px solid;
+  padding: 8px;
+  margin: 8px;
+}
+
+.parent {
+  background: white
+}
+
+.parent:focus-within {
+  background: red
+}
+
+.parent:focus-within button:not(:focus) {
+  opacity: .5
+}

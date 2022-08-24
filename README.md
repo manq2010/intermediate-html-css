@@ -1,17 +1,24 @@
 # More Text Styles
 
-https://fonts.google.com/
-https://fontlibrary.org/
+| --- | --- | --- | --- | --- | --- |
 
+[Google Fonts] and [Font Library]
+
+[Google Fonts]: https://fonts.google.com/
+[Font Library]: https://fontlibrary.org/
+
+
+```html
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/jellee-typeface" type="text/css"/>
-
+```
 
 ### CSS
 
+```css
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 font-family: 'Raleway', sans-serif;
@@ -21,6 +28,7 @@ p {
    font-weight: normal;
    font-style: normal;
 }
+```
 
 # Parent and Sibling Combinators
 
@@ -28,27 +36,31 @@ p {
 + - the adjacent sibling combinator
 ~ - the general sibling combinator
 
-https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements
+[Selectors] and [Css Diner]
 
-https://flukeout.github.io/
+[Selectors]: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements
+[Css Diner]: https://flukeout.github.io/
 
 # Position
 
-https://developer.mozilla.org/en-US/docs/Web/CSS/position
+[Position]
+
+[Position]: https://developer.mozilla.org/en-US/docs/Web/CSS/position
 
 # CSS Functions
 
-calc(), min(), max(), and clamp()
+`calc()`, `min()`, `max()`, and `clamp()`
 
 ## calc()
 
-The most powerful use cases for calc include:
+The most powerful use cases for **calc** include:
 
 Mixing units
-The ability to nest calc( calc () - calc () )
+The ability to nest `calc( calc () - calc () )`
 
 ### html
 
+```html
 <body>
 		<div id="container">
 			<header id="header">< header /></header>
@@ -57,9 +69,11 @@ The ability to nest calc( calc () - calc () )
 		</div>
 </body>
 
+```
+
 ### CSS
 
-
+```css
 	--header: 3rem;
 	--footer: 40px;
 	--main: calc(100vh - calc(var(--header) + var(--footer)));
@@ -97,11 +111,13 @@ body {
 	height: var(--footer);
 	background: #232323;
 }
+```
 
 ## min()
 
-min() does an excellent job of helping us create responsive websites. Take a look at this example:
+`min()` does an excellent job of helping us create responsive websites. Take a look at this example:
 
+```css
 #iconHolder {
   width: min(150px, 100%);
   height: min(150px, 100%);
@@ -109,34 +125,42 @@ min() does an excellent job of helping us create responsive websites. Take a loo
   border: 6px solid blue;
 }
 
+```
+
 ## max()
 
-Max works the same way as min, only in reverse. It will select the largest possible value from within the parentheses. You can think of max() as ensuring a minimum allowed value for a property.
+**Max** works the same way as **min**, only in reverse. It will select the largest possible value from within the parentheses. You can think of `max()` as ensuring a minimum allowed value for a property.
 
 Consider the following property of a given element:
 
+```css
 width: max(100px, 4em, 50%);
+```
 
 ## clamp()
 
-clamp() is a great way to make elements fluid and responsive. clamp() takes 3 values:
+`clamp()` is a great way to make elements fluid and responsive. `clamp()` takes 3 values:
 
+```css
 h1 {
   font-size: clamp(320px, 80vw, 60rem);
 }
-
+```
 1. the smallest value (320px)
 2. the ideal value (80vw)
 3. the largest value (60rem)
 
-https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions
+[CSS Functions]
+
+[CSS Functions]: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions
 
 # Custom Properties
 
-By declaring our custom property on the :root selector in the example above, we can access it on any other valid selector within our CSS file, since any other selector would be considered a descendant of the :root selector.
+By declaring our custom property on the :root selector in the example above, we can access it on any other valid selector within our CSS file, since any other selector would be considered a descendant of the `:root selector`.
 
 ## :root selector
 
+```css
 :root {
   --main-color: red;
 }
@@ -148,9 +172,11 @@ By declaring our custom property on the :root selector in the example above, we 
 .exciting-paragraph {
   background-color: var(--main-color);
 }
+```
 
 ## Media Queries
 
+```css
 @media (prefers-color-scheme: dark) {
   :root {
     --border-btn: 1px solid rgb(220, 220, 220);
@@ -160,8 +186,11 @@ By declaring our custom property on the :root selector in the example above, we 
     --theme-name: "dark";
   }
 }
+```
 
-https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+[CSS Custom Properties]
+
+[CSS Custom Properties]: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 
 # Frameworks Overview
 
@@ -173,4 +202,6 @@ Preprocessors (aka precompilers) are languages that help you write CSS more easi
 
 ## SASS Documentation
 
-https://sass-lang.com/documentation/
+[SASS Documentation]
+
+[SASS Documentation]: https://sass-lang.com/documentation/
