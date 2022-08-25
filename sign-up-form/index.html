@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+
+
+
+
+    <div class="container">
+        <div class="hero-left">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="img/odin-lined.png" alt="odin-lined">
+                    <span>ODIN</span>
+                </div>
+
+            </div>
+            <div class="credit-img">
+                <p>Photo by David Clode</p>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="text-holder">
+                <p>This is not a real online service! You know you need something like this in life to help you realize
+                    your deepest dreams. <br>
+                    Sign up now to get started</p>
+
+                <p>You <b class="title">know</b> you want to.</p>
+            </div>
+            <div class="form-container">
+                <div class="form-inner-container">
+                    <h1> lets do this</h1>
+                    <form action="#" method="get">
+                        <div class="form-inner-holder">
+                            <div class="left-form">
+                                <div>
+                                    <label for="first-name">FIRST NAME</label>
+                                </div>
+                                <input type="text" id="first-name" name="first-name" placeholder="Man"><br><br>
+                                <div>
+                                    <label for="email">EMAIL</label>
+                                </div>
+                                <input type="email" id="email" name="email" placeholder="email@g.com"><br><br>
+                                <div>
+                                    <label for="user-password">PASSWORD</label>
+                                </div>
+                                <input type="password" id="user-password" name="user-password" required
+                                    pattern="(\d{5}([\-]\d{4})?)"
+                                    title="Please enter a password with more than 10 characters" min="4">
+                                <br><br>
+                            </div>
+
+                            <div class="right-form">
+                                <div>
+                                    <label for="last-name">LAST NAME</label>
+                                </div>
+                                <input type="text" id="last-name" name="last-name" placeholder="Sihlo"><br><br>
+                                <div>
+                                    <label for="phone-number">PHONE NUMBER</label>
+                                </div>
+                                <input type="tel" id="phone-number" name="phone-number"
+                                    placeholder="071 234 5678"><br><br>
+
+                                <div>
+                                    <label for="user-password">CONFIRM PASSWORD</label>
+                                </div>
+                                <input type="password" id="user-password-confirm" name="user-password" required>
+                                <br><br>
+
+
+                            </div>
+                        </div>
+                        <div class="error"></div>
+                        <br>
+                    </form>
+                </div>
+            </div>
+            <div class="btn-container">
+                <button class="btn">
+                    Create Account
+                </button>
+                <div id="text">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

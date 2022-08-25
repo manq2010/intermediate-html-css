@@ -1,0 +1,178 @@
+@font-face {
+    font-family: "CustomFont";
+    src: url("../src/Norse-Bold.otf") format("opentype")
+}
+
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+::before,
+::after {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+
+    grid-template-columns: 1fr 2fr;
+    height: 680px;
+}
+
+.hero-left {
+    background-image: url(../img/img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+
+}
+
+
+.logo-container {
+    margin-left: 0rem;
+    margin-bottom: 15rem;
+    /* border: black solid 2px; */
+    background-color: #495959;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    height: 120px;
+
+}
+
+span {
+    /* border: red solid 2px; */
+    margin-bottom: 100px;
+    font-family: CustomFont;
+    font-weight: 900;
+    font-size: 300%;
+    position: relative;
+    top: -20px;
+    color: white;
+}
+
+.logo {
+    margin: 6px;
+    height: 100px;
+
+}
+
+img {
+    width: 60px;
+}
+
+.logo-text {
+    margin-top: 300px;
+}
+
+.credit-img {
+    color: white;
+    /* border: red solid 2px; */
+    display: flex;
+    justify-content: center;
+    /* font-size:large; */
+}
+
+
+.hero-right {
+    background-color: #d9efef;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.text-holder {
+    /* border: red solid 2px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+
+}
+
+b {
+    font-style: italic;
+}
+
+.form-container {
+    background-color: #fff;
+}
+
+.form-inner-container {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.form-inner-holder {
+    display: flex;
+    gap: 40px;
+}
+
+label {
+    font-weight: 100;
+    font-size: small;
+}
+
+/* input[type=email] {
+    border: 1px solid red;
+
+  } */
+
+input {
+    appearance: none;
+
+    width: 100%;
+    border: 1px solid #E5E7EB;
+    margin: 0;
+
+    font-family: inherit;
+    font-size: 90%;
+
+    box-sizing: border-box;
+}
+
+/* input:invalid {
+    border-color: red;
+  } */
+
+/* input:valid {
+    border-color: green;
+  } */
+
+input:focus:invalid {
+    outline: none;
+}
+
+.error {
+    width: 100%;
+    padding: 0;
+
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+
+    box-sizing: border-box;
+}
+
+.error.active {
+    padding: 0.3em;
+}
+
+
+.btn-container {
+    margin: 20px;
+}

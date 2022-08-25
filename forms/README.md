@@ -75,3 +75,21 @@ To create a legend, we use the **<legend>** element with the text we want to dis
 [Resources]
 
 [Resources]: https://web.dev/learn/forms/javascript/
+
+# Form Validation
+
+To ensure a good user experience and to meet accessibility guidelines, we should always indicate which fields are required. This will often be done by adding an ***asterisk`(*)`*** to the required field label like we have done in the example.
+
+## Minimum Length Validation
+
+To add the minimum length validation, we give the form control a **minlength** attribute with an integer value that represents the minimum amount of characters we want to allow in the form control:
+
+## Maximum Length Validation
+
+To add a maximum length validation, we give the form control a **maxlength** attribute with an integer value which represents the maximum amount of characters we want to allow in the form control:
+
+## Link
+
+[Link]
+
+[Link]: https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation
