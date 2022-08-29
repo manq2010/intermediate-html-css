@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/grid.css">
+    <title>Creating Grid</title>
+</head>
+
+<body>
+
+    <!-- .container>div{Item $}*5 -->
+    <div class="container">
+        <div class="item-a">item-a</div>
+        <div class="item-b">item-b</div>
+        <div class="item-c">item-c</div>
+        <div class="item-d">item-d</div>
+        <div class="item-e">item-e</div>
+    </div>
+
+
+    <div class="grid-parent">
+
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+
+        <ul style="display: contents;">
+            <!-- These grid-items get to participate on 
+               the same grid!-->
+            <li class="grid-item">0ne</li>
+            <li class="grid-item">two</li>
+        </ul>
+
+    </div>
+
+    <br><br>
+
+
+    <div class="grid">
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse aliquid laboriosam minima ex praesentium
+            recusandae reprehenderit unde sit tempore atque aut commodi quae expedita corrupti, dignissimos architecto.
+            Eius, maiores ad?</div>
+        <div>Quibusdam, eos esse dolorum facere voluptatem eius, dolore quas totam aspernatur obcaecati harum? Nihil
+            eligendi eos minus odit minima earum incidunt rem fugit reprehenderit, molestiae possimus eveniet itaque
+            laudantium excepturi.</div>
+        <div>Ducimus quibusdam inventore delectus doloribus dignissimos. Dignissimos quos officia minus exercitationem
+            perspiciatis harum iusto molestiae deleniti quod sunt amet recusandae autem, neque doloremque ad alias eaque
+            consequuntur nesciunt quis eius!</div>
+        <div>Cumque aspernatur ex ipsum dolorum eius, tempore omnis minus sequi architecto totam sunt maxime nemo, ab
+            repellendus. Aut voluptatem saepe voluptatibus nisi ipsum. Debitis corporis culpa ipsa error nemo doloribus.
+        </div>
+        <div>Consequatur dolore, architecto quos saepe consequuntur libero minus totam? Enim optio provident commodi
+            corporis officiis, sunt maiores? Cupiditate consequuntur, cumque natus corporis velit sunt ad magni aliquid
+            facere deleniti molestiae.</div>
+        <div>Voluptatibus similique modi voluptatum voluptatem quo quod minima ducimus facere, sequi libero accusamus
+            nisi nobis? Minima error tempore quo esse quod odit, deleniti labore nulla ullam velit nemo neque sint!
+        </div>
+        <div>Qui, corporis delectus? Pariatur vel autem commodi, accusantium, voluptate obcaecati iste, a debitis
+            facilis repellendus mollitia. Dolore dicta totam, quaerat omnis accusantium magni alias voluptates eligendi
+            ex id aut dolorem?</div>
+        <div>Recusandae tempora ab error omnis exercitationem illo accusamus esse sit ipsa accusantium iure, possimus
+            ducimus quis consequuntur qui corporis nobis culpa repudiandae! Suscipit, debitis. Omnis delectus at vitae
+            laborum quos?</div>
+        <div>Dolorem saepe accusamus sed placeat porro ex, ab, vel eaque libero incidunt facilis delectus, iure odio
+            dicta error consequuntur perspiciatis quasi? Corrupti incidunt quia asperiores quo magnam at minima
+            laudantium?</div>
+        <div>Dolor ad saepe, nemo fugit tempora autem est fugiat quis porro atque nam repellendus maxime neque
+            voluptatem rerum amet odit aspernatur voluptates iusto eos laboriosam enim vel. Eius, debitis beatae!</div>
+    </div>
+
+    <br><br><br>
+
+    <p>Check <a href="https://codepen.io/matuzo/post/animating-css-grid-layout-properties">this post</a> for more
+        details</p>
+
+    <button class="js-button">Animate</button>
+
+    <div class="grid js-grid">
+        <article class="item">
+            <h2>Element 1</h2>
+        </article>
+        <article class="item">
+            <h2>Element 2</h2>
+        </article>
+        <article class="item">
+            <h2>Element 3</h2>
+        </article>
+        <article class="item">
+            <h2>Element 4</h2>
+        </article>
+        <article class="item">
+            <h2>Element 5</h2>
+        </article>
+        <article class="item">
+            <h2>Element 6</h2>
+        </article>
+        <article class="item">
+            <h2>Element 7</h2>
+        </article>
+        <article class="item">
+            <h2>Element 8</h2>
+        </article>
+        <article class="item">
+            <h2>Element 9</h2>
+        </article>
+        <article class="item">
+            <h2>Element 10</h2>
+        </article>
+        <article class="item">
+            <h2>Element 11</h2>
+        </article>
+        <article class="item">
+            <h2>Element 12</h2>
+        </article>
+    </div>
+
+    <script>
+        document.querySelector('.js-button').addEventListener('click', function () {
+            console.log('test')
+            document.querySelector('.js-grid').classList.toggle('grid--full')
+        })
+    </script>
+
+
+</body>
+
+</html>

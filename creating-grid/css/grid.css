@@ -1,0 +1,283 @@
+/* .container {
+    display: grid;
+} */
+
+/* .container {
+    display: -ms-inline-grid;
+} */
+
+/* .container {
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: 50px 50px;
+    border: red solid 1px;
+} */
+
+/* .container {
+    display: grid;
+    grid-template: 50px 50px / 250px 50px 50px;
+} */
+
+/* Explicit vs Implicit Grid */
+
+/* .container {
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: 50px 50px;
+} */
+
+/* .container {
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: 50px 50px;
+    /* grid-auto-rows: 50px;
+
+    grid-auto-flow: column;
+    grid-auto-columns: 50px;
+
+} */
+
+/* Gap */
+
+/* .container {
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: 50px 50px;
+    /* column-gap: 10px;
+    /* row-gap: 20px; 
+    gap: 40px
+
+    /* standard 
+    gap: <grid-row-gap> <grid-column-gap>;
+    gap: 15px 10px;
+}
+
+.container > div {
+    border: 1px solid blue;
+} */
+
+
+.container {
+    display: grid;
+}
+
+/* .container {
+    display: grid;
+    grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+    grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+
+} */
+
+/* .container {
+    grid-template-rows: [row1-start] 25% [row1-end row2-start] 25% [row2-end];
+}
+
+.container {
+    grid-template-columns: repeat(3, 20px [col-start]);
+} */
+
+/* Which is equivalent to this: */
+
+/* .container {
+    grid-template-columns: 20px [col-start] 20px [col-start] 20px [col-start];
+} */
+
+
+/* .container {
+    grid-template-columns: 1fr 50px 1fr 1fr;
+  } */
+
+.container>div {
+    border: 1px solid red;
+}
+
+/* grid-template-areas */
+
+/* .item-a {
+    grid-area: header;
+}
+
+.item-b {
+    grid-area: main;
+}
+
+.item-c {
+    grid-area: sidebar;
+}
+
+.item-d {
+    grid-area: footer;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header header header"
+        "main main . sidebar"
+        "footer footer footer footer";
+} */
+
+/* .container {
+    display: grid;
+    grid-template:
+      [row1-start] "header header header" 25px [row1-end]
+      [row2-start] "footer footer footer" 25px [row2-end]
+      / auto 50px auto;
+  } */
+
+/* That’s equivalent to this:  */
+
+/* .container {
+    grid-template-rows: [row1-start] 25px [row1-end row2-start] 25px [row2-end];
+    grid-template-columns: auto 50px auto;
+    grid-template-areas:
+        "header header header"
+        "footer footer footer";
+} */
+
+/* .container {
+    justify-items: start;
+    justify-items: end;
+    justify-items: center;
+    justify-items: stretch;
+} */
+
+/* .container {
+    align-items: start;
+    align-items: end;
+    align-items: center;
+    align-items: stretch;
+} */
+
+/* .container {
+    place-items: center;
+} */
+
+/* .container {
+    justify-content: space-around;
+} */
+
+/* .container {
+    align-content: stretch;    
+  } */
+
+/* .container {
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) 3fr;
+    /* grid-template-columns: 60px 60px 60px 60px 60px; 
+    grid-template-rows: 30px 30px;
+    grid-auto-flow: row;
+}
+
+.item-a {
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+
+.item-e {
+    grid-column: 5;
+    grid-row: 1 / 3;
+}
+
+.item-a {
+    grid-column-start: 2;
+    grid-column-end: five;
+    grid-row-start: row1-start;
+    grid-row-end: 3;
+  }
+
+  .item-b {
+    grid-column-start: 1;
+    grid-column-end: span col4-start;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+  }
+
+  .item-d {
+    grid-area: 1 / col4-start / last-line / 6;
+  }
+
+  .item-a {
+    justify-self: end;
+  }
+
+  .item-a {
+    align-self: center;
+  }
+
+  .item-e {
+    place-self: center stretch;
+  } */
+
+
+
+
+/* .parent-grid {
+    border: 1px solid blue;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+}
+
+.grid-item {
+    grid-column: 2 / 7;
+
+    display: grid;
+    grid-template-columns: subgrid;
+}
+
+.child-of-grid-item {
+    /* gets to participate on parent grid!
+    grid-column: 3 / 6;
+} */
+
+
+/* Fluid Columns Snippet */
+
+/* .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
+  }
+  .grid > div {
+    background: #EDE7F6;
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
+  body {
+    margin: 2rem;
+    font: 12px system-ui;
+  } */
+
+  /* Animation*/
+
+  .grid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 100px;
+    grid-gap: 20px;
+    transition: all 1s;
+  }
+  
+  .grid--full {
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 200px;
+    grid-gap: 10px;
+  }
+  
+  button {
+    background-color: #123456;
+    color: #ffffff;
+    margin: 2rem 0;
+    padding: 1.4rem;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+  
+  dt {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
