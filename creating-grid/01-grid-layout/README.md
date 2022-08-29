@@ -67,7 +67,7 @@ place-content sets both the align-content and justify-content properties in a si
 
 Values:
 
-* **<align-content>** / **<justify-content>**
+* `<align-content>` / `<justify-content>`
 
 ## Explicit vs Implicit Grid
 
@@ -90,3 +90,5 @@ The  comprehensive guide to CSS grid, focusing on all the settings both for the 
 [Link-to-guide]
 
 [Link-to-guide]: https://css-tricks.com/snippets/css/complete-guide-grid/
+
+# Positioning Grid Elements
