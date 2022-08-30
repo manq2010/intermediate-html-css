@@ -88,7 +88,7 @@ It is a relatively straightforward function that only takes in two arguments:
 
 ## auto-fit and auto-fill
 
-These two values are actually a part of the `repeat()`function specification, but they were saved for the end of the lesson because their usefulness is not apparent until after you understand the `minmax()` function. Here’s the use case: You want to give your grid a number of columns that are flexible based on the size of the grid. For example, if our grid is only `200px` wide, we may only want one column. If it’s `400px` wide, we may want two, and so on. Solving this problem with media queries would be a lot of typing. Thankfully, `auto-fit` and `auto-fill` are here to save the day!
+These two values are actually a part of the `repeat()` function specification, but they were saved for the end of the lesson because their usefulness is not apparent until after you understand the `minmax()` function. Here’s the use case: You want to give your grid a number of columns that are flexible based on the size of the grid. For example, if our grid is only `200px` wide, we may only want one column. If it’s `400px` wide, we may want two, and so on. Solving this problem with media queries would be a lot of typing. Thankfully, `auto-fit` and `auto-fill` are here to save the day!
 
 ```css
 .simple-example {
